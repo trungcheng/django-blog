@@ -120,7 +120,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# TEMPLATE FOR FORM
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# DEFAULT REDIRECT URL AFTER LOGIN
+LOGIN_REDIRECT_URL = 'blog-home'
+
+# LOGIN REDIRECT FOR THESE ROUTES WHICH REQUIRED LOGIN
+LOGIN_URL = 'login'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
