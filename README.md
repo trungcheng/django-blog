@@ -17,7 +17,8 @@
 2. cd project_folder && virtualenv venv
 3. ./venv/Scripts/activate
 4. pip install -r requirements.txt
-5. cd app && python manage.py makemigrations
-6. python manage.py createsuperuser
-7. python manage.py migrate
-8. python manage.py runserver
+5. cp .env.example .env
+6. cd app && python manage.py makemigrations
+7. python manage.py createsuperuser
+8. python manage.py migrate
+9. python manage.py runserver
