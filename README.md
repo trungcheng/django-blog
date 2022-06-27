@@ -83,10 +83,10 @@ A tutorial about Python Django for starter.
    - sudo chmod -R 775 django-blog/media/
 
 7. Config secret key
-  - sudo touch /etc/config.json
-  - sudo nano django-blog/app/settings.py
-  - sudo nano /etc/config.json (add all secret keys to here)
-  - sudo nano django-blog/app/settings.py (import json and open file + load)
-  - sudo ufw delete allow 8000
-  - sudo ufw allow http/tcp
-  - sudo service apache2 restart
+   - sudo touch /etc/config.json
+   - sudo nano django-blog/app/settings.py
+   - sudo nano /etc/config.json (add all secret keys to here)
+   - sudo nano django-blog/app/settings.py (import json and open file + load)
+   - sudo ufw delete allow 8000
+   - sudo ufw allow http/tcp
+   - sudo service apache2 restart
