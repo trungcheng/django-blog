@@ -28,7 +28,7 @@ A tutorial about Python Django for starter.
 8. python manage.py migrate
 9. python manage.py runserver
 
-## Deployment to Linux server
+## Deploy to Linux server
 
 1. Add user to ssh with sudo:
    - apt-get update && apt-get upgrade (software update)
