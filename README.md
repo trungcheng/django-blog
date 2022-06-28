@@ -14,8 +14,9 @@ A tutorial about Python Django for starter.
 - Create, Update, Delete Posts
 - Pagination
 - Email & Password Reset
+- AWS Upload Files
 
-## Installation Step:
+## Installation Steps:
 
 1. pip install virtualenv 
 2. cd project_folder && virtualenv venv
