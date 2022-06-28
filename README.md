@@ -90,3 +90,20 @@ A tutorial about Python Django for starter.
    - sudo ufw delete allow 8000
    - sudo ufw allow http/tcp
    - sudo service apache2 restart
+
+## Config https/ssl (Let's Encrypt)
+
+- sudo apt-get update && apt-get install software-properties-common
+- sudo add-apt-repository universe
+- sudo add-apt-repository ppa:certbot/certbot
+- sudo apt-get update
+- sudo apt-get install python-certbot-apache
+- sudo nano /etc/apache2/sites-available/django-blog.conf (change ServerName, comment WSGI)
+- sudo certbot --apache
+- sudo nano /etc/apache2/sites-available/django-blog.conf (comment static + WSGI sections)
+- sudo nano /etc/apache2/sites-available/django-blog-le-ssl.conf (remove comment static + WSGI section)
+- sudo apachectl configtest
+- sudo ufw allow https
+- sudo service apache2 restart
+- sudo certbot renew --dry-run
+- sudo crontab -e (30 4 1 * * sudo certbot renew --quite)
